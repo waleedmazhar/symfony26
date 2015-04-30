@@ -1,0 +1,15 @@
+<html>
+<body>
+<header>
+    Your header that will automatically include in every page
+    <li>home</li><li>contact</li>
+</header>
+<div id="content">
+    {% block content %}This codes will automatically be replaced by view who extend it{% endblock %}
+</div>
+<footer>
+    Your footer that will automatically include in every view/page
+    <li>home</li><li>contact</li>
+</footer>
+</body>
+</html>

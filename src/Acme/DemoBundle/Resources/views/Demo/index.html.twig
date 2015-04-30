@@ -1,8 +1,10 @@
-{% extends "AcmeDemoBundle::layout.html.twig" %}
+{#THIS FILE IS CALLED VIEW. IT HAS EXACTLY SAME NAMED BLOCK AS IN waleed.html.twig #}
+{# VIEW WILL REPLACE LAYOUT CONTENTS IN BLOCKS WITH ITS CONTENTS. WHILE EVERYTHING OUTSIDE OF BLOCK IN LAYOUT WILL REMAIN AS IT IS. #}
 
-{% block title "Symfony - Demos" %}
+{#SO IF YOU WANT TO INCLUDE HEADER FOOTER, PLACE IT OUTSIDE OF BLOCK#}
 
-{% block content_header '' %}
+{% extends "AcmeDemoBundle::waleed.html.twig" %}
+{#BY WALEED; EXTENDS TELL WHICH LAYOUT TO USE IN THIW VIEW#}
 
 {% block content %}
     <h1 class="title">Available demos</h1>
